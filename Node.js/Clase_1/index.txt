@@ -1,0 +1,43 @@
+libuv programa para los modulos
+
+Modulo: el patron modulo es un patron de diseño el cual hace uso de una 
+IFEE(Immediatly invoked Funtion Expression) para contener todo el programa,
+el cual va a destruir todas las variables locales creadas en su interior salvo
+que se "Exporten" o salgan a un 
+
+/****************************/
+(Funtion(windows,document){
+    var a = 1
+    Funtion foo(){}
+
+    //Namespace
+    windows.a = a
+})(windows,document)
+/****************************/
+
+Paquetes en Node
+
+NPM : Node Package Manager (ya esta incluido en node)
+
+npm init [-y]: generar un archivo de conf npm llamada package.json . el flag -y omite el cuestionario
+
+npm {install|i} <tipo> <Paquete>  // el paid ( | ) significa igual a
+
+Tipo de instalaciones:
+    -g              Global / se instala a nivel OS
+    --save|-s       local / Produccion
+    --save-dev|-D   Local / Desarrollo
+
+
+LAMBDA | Flecha | fat arrow funtion
+
+Let foo = funtion (){}  // esto es igual que la de abajo
+Let foo = () => {}
+
+let foo = funtion (item){}  // esto es igual que la de abajo
+let foo = item => {}
+
+let foo = funtion (item){return item * 2}  // esto es igual que la de abajo
+let foo = item => {return item * 2}
+
+

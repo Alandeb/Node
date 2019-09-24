@@ -1,0 +1,44 @@
+https://libuv.org/
+
+Modulo : El patron modulo es un patron de diseño el cual hace uso de una IFEE(Immediatly invoked Function Expression) para contener todo el programa, el cual va a destruir todas las variables locales creadas en su interior salvo que se "exporten" o salgan a un ambito mas global o superior. 
+
+/***************************/
+(function(window,document){
+
+    var a = 1
+    function foo(){}
+
+    //Namespace
+    window.a = a
+
+})(window,document)
+/***************************/
+NPM : Node Package Manager 
+
+npm init [-y]: Generar un archivo de configuracion NPM llamada package.json . El flag -y omite el cuestionario. 
+
+
+npm {install|i} <tipo> <paquete> 
+
+TIPO : 
+
+    -g              Global / Se instala a nivel OS
+    --save|-S       Local / Producción 
+    --save-dev|-D   Local / Desarrollo    
+
+
+
+DYNAMIC IMPORTS 
+
+
+
+LAMBDA | Flecha |  Fat Arrow Function 
+
+let foo = function(){}
+let foo = () => {}
+
+let foo = function(item){}
+let foo = item => {}
+
+let foo = function(item){ return item * 2 }
+let foo = item => item * 2 
